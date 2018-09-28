@@ -8,3 +8,5 @@
 
 #import "JWLoadingHandwriting.h"
 #import "JWLoadingHourglass.h"
+#import "JWLoadingEqualize.h"
+#import "JWLoadingRotatedotglow.h"

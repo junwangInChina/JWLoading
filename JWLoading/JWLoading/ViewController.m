@@ -26,7 +26,9 @@ static NSString *kLoadingCell = @"ViewControllerTableViewCellIdentifier";
     self.navigationItem.title = @"Loading...";
     
     [self.loadingArray addObjectsFromArray:@[@{@"title":@"手写Loading",@"className":@"HandwritingAnimationController"},
-                                             @{@"title":@"沙漏",@"className":@"HourglassAnimationController"}]];
+                                             @{@"title":@"沙漏",@"className":@"HourglassAnimationController"},
+                                             @{@"title":@"等效跳跃",@"className":@"EqualizeAnimationController"},
+                                             @{@"title":@"旋转点",@"className":@"RotateDotGlowController"}]];
     [self.loadingTableView reloadData];
 }
 
