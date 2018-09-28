@@ -6,12 +6,11 @@
 //  Copyright © 2018年 wangjun. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JWLoadingView.h"
 
-@interface JWLoadingHandwriting : UIView
-
-@property (nonatomic, strong) UIColor *stroke_color;
-
-- (void)startAnimation;
+/*
+ 手写Loading
+ */
+@interface JWLoadingHandwriting : JWLoadingView
 
 @end

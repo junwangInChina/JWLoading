@@ -7,3 +7,4 @@
 //
 
 #import "JWLoadingHandwriting.h"
+#import "JWLoadingHourglass.h"

@@ -1,28 +1,28 @@
 //
-//  HandwritingAnimationController.m
+//  HourglassAnimationController.m
 //  JWLoading
 //
-//  Created by wangjun on 2018/9/27.
+//  Created by wangjun on 2018/9/28.
 //  Copyright © 2018年 wangjun. All rights reserved.
 //
 
-#import "HandwritingAnimationController.h"
+#import "HourglassAnimationController.h"
 
 #import "JWLoading.h"
 
-@interface HandwritingAnimationController ()
+@interface HourglassAnimationController ()
 
 @end
 
-@implementation HandwritingAnimationController
+@implementation HourglassAnimationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    JWLoadingHandwriting *tempLoading = [JWLoadingHandwriting new];
+
+    JWLoadingHourglass *tempLoading = [JWLoadingHourglass new];
     tempLoading.backgroundColor = self.view.backgroundColor;
     tempLoading.center = CGPointMake(CGRectGetWidth(self.view.frame) / 2.0,
                                      CGRectGetHeight(self.view.frame) / 2.0);

@@ -54,7 +54,7 @@
 {
     if (!_loadingShapeLayer)
     {
-        UIColor *tempColor = self.backgroundColor == nil || self.backgroundColor == [UIColor clearColor] ? self.superview.backgroundColor : self.backgroundColor;
+        UIColor *tempColor = (self.backgroundColor == nil || self.backgroundColor == [UIColor clearColor]) ? self.superview.backgroundColor : self.backgroundColor;
         
         self.loadingShapeLayer = [CAShapeLayer layer];
         _loadingShapeLayer.frame = self.bounds;
@@ -77,7 +77,7 @@
 {
     if (!_dotShapeLayer)
     {
-        UIColor *tempColor = self.backgroundColor == nil || self.backgroundColor == [UIColor clearColor] ? self.superview.backgroundColor : self.backgroundColor;
+        UIColor *tempColor = (self.backgroundColor == nil || self.backgroundColor == [UIColor clearColor]) ? self.superview.backgroundColor : self.backgroundColor;
 
         self.dotShapeLayer = [CAShapeLayer layer];
         _dotShapeLayer.frame = self.bounds;

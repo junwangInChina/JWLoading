@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DAB1265C215B5D3500133E60 /* JWLoadingHandwriting.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1265B215B5D3500133E60 /* JWLoadingHandwriting.m */; };
 		DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CCA215CC8FD00133E60 /* HandwritingAnimationController.m */; };
+		DAB12CD1215DB51000133E60 /* JWLoadingHourglass.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CD0215DB51000133E60 /* JWLoadingHourglass.m */; };
+		DAB12CD4215DB56B00133E60 /* JWLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CD3215DB56B00133E60 /* JWLoadingView.m */; };
+		DAB12CD8215DBEBD00133E60 /* HourglassAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CD7215DBEBD00133E60 /* HourglassAnimationController.m */; };
 		DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE79A6A215B5B9F0099F19B /* AppDelegate.m */; };
 		DAE79A6E215B5B9F0099F19B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE79A6D215B5B9F0099F19B /* ViewController.m */; };
 		DAE79A71215B5B9F0099F19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE79A6F215B5B9F0099F19B /* Main.storyboard */; };
@@ -24,6 +27,12 @@
 		DAB12CC9215CC8FD00133E60 /* HandwritingAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandwritingAnimationController.h; sourceTree = "<group>"; };
 		DAB12CCA215CC8FD00133E60 /* HandwritingAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandwritingAnimationController.m; sourceTree = "<group>"; };
 		DAB12CCC215CD76300133E60 /* JWLoadingDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingDefine.h; sourceTree = "<group>"; };
+		DAB12CCF215DB51000133E60 /* JWLoadingHourglass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingHourglass.h; sourceTree = "<group>"; };
+		DAB12CD0215DB51000133E60 /* JWLoadingHourglass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingHourglass.m; sourceTree = "<group>"; };
+		DAB12CD2215DB56B00133E60 /* JWLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingView.h; sourceTree = "<group>"; };
+		DAB12CD3215DB56B00133E60 /* JWLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingView.m; sourceTree = "<group>"; };
+		DAB12CD6215DBEBD00133E60 /* HourglassAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HourglassAnimationController.h; sourceTree = "<group>"; };
+		DAB12CD7215DBEBD00133E60 /* HourglassAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HourglassAnimationController.m; sourceTree = "<group>"; };
 		DAE79A66215B5B9F0099F19B /* JWLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE79A69215B5B9F0099F19B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAE79A6A215B5B9F0099F19B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB12CC8215CC8DD00133E60 /* Handwriting */,
+				DAB12CD5215DBEA000133E60 /* Hourglass */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -62,6 +72,15 @@
 				DAB12CCA215CC8FD00133E60 /* HandwritingAnimationController.m */,
 			);
 			path = Handwriting;
+			sourceTree = "<group>";
+		};
+		DAB12CD5215DBEA000133E60 /* Hourglass */ = {
+			isa = PBXGroup;
+			children = (
+				DAB12CD6215DBEBD00133E60 /* HourglassAnimationController.h */,
+				DAB12CD7215DBEBD00133E60 /* HourglassAnimationController.m */,
+			);
+			path = Hourglass;
 			sourceTree = "<group>";
 		};
 		DAE79A5D215B5B9F0099F19B = {
@@ -103,8 +122,12 @@
 			children = (
 				DAB12657215B5C5900133E60 /* JWLoading.h */,
 				DAB12CCC215CD76300133E60 /* JWLoadingDefine.h */,
+				DAB12CD2215DB56B00133E60 /* JWLoadingView.h */,
+				DAB12CD3215DB56B00133E60 /* JWLoadingView.m */,
 				DAB1265A215B5D3500133E60 /* JWLoadingHandwriting.h */,
 				DAB1265B215B5D3500133E60 /* JWLoadingHandwriting.m */,
+				DAB12CCF215DB51000133E60 /* JWLoadingHourglass.h */,
+				DAB12CD0215DB51000133E60 /* JWLoadingHourglass.m */,
 			);
 			path = JWLoading;
 			sourceTree = "<group>";
@@ -200,7 +223,10 @@
 				DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */,
 				DAE79A79215B5BA00099F19B /* main.m in Sources */,
 				DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */,
+				DAB12CD1215DB51000133E60 /* JWLoadingHourglass.m in Sources */,
+				DAB12CD8215DBEBD00133E60 /* HourglassAnimationController.m in Sources */,
 				DAB1265C215B5D3500133E60 /* JWLoadingHandwriting.m in Sources */,
+				DAB12CD4215DB56B00133E60 /* JWLoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
