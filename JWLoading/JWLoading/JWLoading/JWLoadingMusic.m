@@ -80,6 +80,7 @@
             tempLayer.path = [self beziPath:tempY].CGPath;
             tempLayer.strokeColor = JWLoadingColor(tempColors[i]).CGColor;
             tempLayer.lineWidth = kLayer_Width;
+            tempLayer.lineCap = kCALineCapRound;
             tempLayer.anchorPoint = CGPointMake(0.5f, 0);
             tempLayer.strokeEnd = 0;
             [tempLayer addAnimation:[self animation:tempDuration] forKey:@"animation"];

@@ -29,7 +29,8 @@ static NSString *kLoadingCell = @"ViewControllerTableViewCellIdentifier";
                                              @{@"title":@"沙漏",@"className":@"HourglassAnimationController"},
                                              @{@"title":@"等效跳跃",@"className":@"EqualizeAnimationController"},
                                              @{@"title":@"旋转点",@"className":@"RotateDotGlowController"},
-                                             @{@"title":@"音乐跳动",@"className":@"MusicAnimationController"}]];
+                                             @{@"title":@"音符律动",@"className":@"MusicAnimationController"},
+                                             @{@"title":@"Skype",@"className":@"SkypeAnimationController"}]];
     [self.loadingTableView reloadData];
 }
 

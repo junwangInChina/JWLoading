@@ -18,6 +18,8 @@
 		DAB12CE6215E034800133E60 /* JWLoadingRotatedotglow.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CE5215E034800133E60 /* JWLoadingRotatedotglow.m */; };
 		DAB12CE9215E2E8200133E60 /* JWLoadingMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CE8215E2E8200133E60 /* JWLoadingMusic.m */; };
 		DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CEC215E2F4400133E60 /* MusicAnimationController.m */; };
+		DAB12E37215F4C4F00133E60 /* SkypeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12E36215F4C4F00133E60 /* SkypeAnimationController.m */; };
+		DAB12E3A215F4C6100133E60 /* JWLoadingSkype.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12E39215F4C6100133E60 /* JWLoadingSkype.m */; };
 		DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE79A6A215B5B9F0099F19B /* AppDelegate.m */; };
 		DAE79A6E215B5B9F0099F19B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE79A6D215B5B9F0099F19B /* ViewController.m */; };
 		DAE79A71215B5B9F0099F19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE79A6F215B5B9F0099F19B /* Main.storyboard */; };
@@ -51,6 +53,10 @@
 		DAB12CE8215E2E8200133E60 /* JWLoadingMusic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingMusic.m; sourceTree = "<group>"; };
 		DAB12CEB215E2F4400133E60 /* MusicAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicAnimationController.h; sourceTree = "<group>"; };
 		DAB12CEC215E2F4400133E60 /* MusicAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicAnimationController.m; sourceTree = "<group>"; };
+		DAB12E35215F4C4F00133E60 /* SkypeAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkypeAnimationController.h; sourceTree = "<group>"; };
+		DAB12E36215F4C4F00133E60 /* SkypeAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkypeAnimationController.m; sourceTree = "<group>"; };
+		DAB12E38215F4C6100133E60 /* JWLoadingSkype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingSkype.h; sourceTree = "<group>"; };
+		DAB12E39215F4C6100133E60 /* JWLoadingSkype.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingSkype.m; sourceTree = "<group>"; };
 		DAE79A66215B5B9F0099F19B /* JWLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE79A69215B5B9F0099F19B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAE79A6A215B5B9F0099F19B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 				DAB12CDC215DD12D00133E60 /* Equalize */,
 				DAB12CE0215E030400133E60 /* RotateDotGlow */,
 				DAB12CEA215E2F1400133E60 /* Music */,
+				DAB12E34215F4C3700133E60 /* Skype */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -129,6 +136,15 @@
 				DAB12CEC215E2F4400133E60 /* MusicAnimationController.m */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		DAB12E34215F4C3700133E60 /* Skype */ = {
+			isa = PBXGroup;
+			children = (
+				DAB12E35215F4C4F00133E60 /* SkypeAnimationController.h */,
+				DAB12E36215F4C4F00133E60 /* SkypeAnimationController.m */,
+			);
+			path = Skype;
 			sourceTree = "<group>";
 		};
 		DAE79A5D215B5B9F0099F19B = {
@@ -182,6 +198,8 @@
 				DAB12CE5215E034800133E60 /* JWLoadingRotatedotglow.m */,
 				DAB12CE7215E2E8200133E60 /* JWLoadingMusic.h */,
 				DAB12CE8215E2E8200133E60 /* JWLoadingMusic.m */,
+				DAB12E38215F4C6100133E60 /* JWLoadingSkype.h */,
+				DAB12E39215F4C6100133E60 /* JWLoadingSkype.m */,
 			);
 			path = JWLoading;
 			sourceTree = "<group>";
@@ -276,8 +294,10 @@
 				DAE79A6E215B5B9F0099F19B /* ViewController.m in Sources */,
 				DAB12CDB215DD10B00133E60 /* JWLoadingEqualize.m in Sources */,
 				DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */,
+				DAB12E37215F4C4F00133E60 /* SkypeAnimationController.m in Sources */,
 				DAE79A79215B5BA00099F19B /* main.m in Sources */,
 				DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */,
+				DAB12E3A215F4C6100133E60 /* JWLoadingSkype.m in Sources */,
 				DAB12CE9215E2E8200133E60 /* JWLoadingMusic.m in Sources */,
 				DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */,
 				DAB12CD1215DB51000133E60 /* JWLoadingHourglass.m in Sources */,

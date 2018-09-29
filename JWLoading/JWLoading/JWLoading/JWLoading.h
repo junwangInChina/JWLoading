@@ -11,3 +11,4 @@
 #import "JWLoadingEqualize.h"
 #import "JWLoadingRotatedotglow.h"
 #import "JWLoadingMusic.h"
+#import "JWLoadingSkype.h"
