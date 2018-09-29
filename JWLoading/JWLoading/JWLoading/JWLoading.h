@@ -10,3 +10,4 @@
 #import "JWLoadingHourglass.h"
 #import "JWLoadingEqualize.h"
 #import "JWLoadingRotatedotglow.h"
+#import "JWLoadingMusic.h"

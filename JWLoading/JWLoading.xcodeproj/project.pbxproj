@@ -16,6 +16,8 @@
 		DAB12CDF215DD14E00133E60 /* EqualizeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CDE215DD14E00133E60 /* EqualizeAnimationController.m */; };
 		DAB12CE3215E032200133E60 /* RotateDotGlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CE2215E032200133E60 /* RotateDotGlowController.m */; };
 		DAB12CE6215E034800133E60 /* JWLoadingRotatedotglow.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CE5215E034800133E60 /* JWLoadingRotatedotglow.m */; };
+		DAB12CE9215E2E8200133E60 /* JWLoadingMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CE8215E2E8200133E60 /* JWLoadingMusic.m */; };
+		DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CEC215E2F4400133E60 /* MusicAnimationController.m */; };
 		DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE79A6A215B5B9F0099F19B /* AppDelegate.m */; };
 		DAE79A6E215B5B9F0099F19B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE79A6D215B5B9F0099F19B /* ViewController.m */; };
 		DAE79A71215B5B9F0099F19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE79A6F215B5B9F0099F19B /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 		DAB12CE2215E032200133E60 /* RotateDotGlowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateDotGlowController.m; sourceTree = "<group>"; };
 		DAB12CE4215E034800133E60 /* JWLoadingRotatedotglow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingRotatedotglow.h; sourceTree = "<group>"; };
 		DAB12CE5215E034800133E60 /* JWLoadingRotatedotglow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingRotatedotglow.m; sourceTree = "<group>"; };
+		DAB12CE7215E2E8200133E60 /* JWLoadingMusic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingMusic.h; sourceTree = "<group>"; };
+		DAB12CE8215E2E8200133E60 /* JWLoadingMusic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingMusic.m; sourceTree = "<group>"; };
+		DAB12CEB215E2F4400133E60 /* MusicAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicAnimationController.h; sourceTree = "<group>"; };
+		DAB12CEC215E2F4400133E60 /* MusicAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicAnimationController.m; sourceTree = "<group>"; };
 		DAE79A66215B5B9F0099F19B /* JWLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE79A69215B5B9F0099F19B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAE79A6A215B5B9F0099F19B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +81,7 @@
 				DAB12CD5215DBEA000133E60 /* Hourglass */,
 				DAB12CDC215DD12D00133E60 /* Equalize */,
 				DAB12CE0215E030400133E60 /* RotateDotGlow */,
+				DAB12CEA215E2F1400133E60 /* Music */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -113,6 +120,15 @@
 				DAB12CE2215E032200133E60 /* RotateDotGlowController.m */,
 			);
 			path = RotateDotGlow;
+			sourceTree = "<group>";
+		};
+		DAB12CEA215E2F1400133E60 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				DAB12CEB215E2F4400133E60 /* MusicAnimationController.h */,
+				DAB12CEC215E2F4400133E60 /* MusicAnimationController.m */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		DAE79A5D215B5B9F0099F19B = {
@@ -164,6 +180,8 @@
 				DAB12CDA215DD10B00133E60 /* JWLoadingEqualize.m */,
 				DAB12CE4215E034800133E60 /* JWLoadingRotatedotglow.h */,
 				DAB12CE5215E034800133E60 /* JWLoadingRotatedotglow.m */,
+				DAB12CE7215E2E8200133E60 /* JWLoadingMusic.h */,
+				DAB12CE8215E2E8200133E60 /* JWLoadingMusic.m */,
 			);
 			path = JWLoading;
 			sourceTree = "<group>";
@@ -259,6 +277,8 @@
 				DAB12CDB215DD10B00133E60 /* JWLoadingEqualize.m in Sources */,
 				DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */,
 				DAE79A79215B5BA00099F19B /* main.m in Sources */,
+				DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */,
+				DAB12CE9215E2E8200133E60 /* JWLoadingMusic.m in Sources */,
 				DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */,
 				DAB12CD1215DB51000133E60 /* JWLoadingHourglass.m in Sources */,
 				DAB12CD8215DBEBD00133E60 /* HourglassAnimationController.m in Sources */,

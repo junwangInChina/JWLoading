@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define JWLOADING_SCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
+#define JWLOADING_SCREEN_HEIGHT  ([UIScreen mainScreen].bounds.size.height)
+
 NS_INLINE UIColor *JWLoadingReverseColor(UIColor *color)
 {
     UIColor *tempColor = (color && color != [UIColor clearColor]) ? color : [UIColor whiteColor];

@@ -28,7 +28,8 @@ static NSString *kLoadingCell = @"ViewControllerTableViewCellIdentifier";
     [self.loadingArray addObjectsFromArray:@[@{@"title":@"手写Loading",@"className":@"HandwritingAnimationController"},
                                              @{@"title":@"沙漏",@"className":@"HourglassAnimationController"},
                                              @{@"title":@"等效跳跃",@"className":@"EqualizeAnimationController"},
-                                             @{@"title":@"旋转点",@"className":@"RotateDotGlowController"}]];
+                                             @{@"title":@"旋转点",@"className":@"RotateDotGlowController"},
+                                             @{@"title":@"音乐跳动",@"className":@"MusicAnimationController"}]];
     [self.loadingTableView reloadData];
 }
 
