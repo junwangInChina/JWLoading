@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA986499215F7BAD007633C7 /* JWLoadingBallRotatePulse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */; };
+		DA98649D215F7C1F007633C7 /* BallRotatePulseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98649C215F7C1F007633C7 /* BallRotatePulseController.m */; };
 		DAB1265C215B5D3500133E60 /* JWLoadingHandwriting.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1265B215B5D3500133E60 /* JWLoadingHandwriting.m */; };
 		DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CCA215CC8FD00133E60 /* HandwritingAnimationController.m */; };
 		DAB12CD1215DB51000133E60 /* JWLoadingHourglass.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CD0215DB51000133E60 /* JWLoadingHourglass.m */; };
@@ -29,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA986497215F7BAD007633C7 /* JWLoadingBallRotatePulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingBallRotatePulse.h; sourceTree = "<group>"; };
+		DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingBallRotatePulse.m; sourceTree = "<group>"; };
+		DA98649B215F7C1F007633C7 /* BallRotatePulseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallRotatePulseController.h; sourceTree = "<group>"; };
+		DA98649C215F7C1F007633C7 /* BallRotatePulseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallRotatePulseController.m; sourceTree = "<group>"; };
 		DAB12657215B5C5900133E60 /* JWLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoading.h; sourceTree = "<group>"; };
 		DAB1265A215B5D3500133E60 /* JWLoadingHandwriting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingHandwriting.h; sourceTree = "<group>"; };
 		DAB1265B215B5D3500133E60 /* JWLoadingHandwriting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingHandwriting.m; sourceTree = "<group>"; };
@@ -80,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA98649A215F7C06007633C7 /* BallRotatePulse */ = {
+			isa = PBXGroup;
+			children = (
+				DA98649B215F7C1F007633C7 /* BallRotatePulseController.h */,
+				DA98649C215F7C1F007633C7 /* BallRotatePulseController.m */,
+			);
+			path = BallRotatePulse;
+			sourceTree = "<group>";
+		};
 		DAB12CC7215CC8DD00133E60 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,7 @@
 				DAB12CE0215E030400133E60 /* RotateDotGlow */,
 				DAB12CEA215E2F1400133E60 /* Music */,
 				DAB12E34215F4C3700133E60 /* Skype */,
+				DA98649A215F7C06007633C7 /* BallRotatePulse */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -200,6 +216,8 @@
 				DAB12CE8215E2E8200133E60 /* JWLoadingMusic.m */,
 				DAB12E38215F4C6100133E60 /* JWLoadingSkype.h */,
 				DAB12E39215F4C6100133E60 /* JWLoadingSkype.m */,
+				DA986497215F7BAD007633C7 /* JWLoadingBallRotatePulse.h */,
+				DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */,
 			);
 			path = JWLoading;
 			sourceTree = "<group>";
@@ -296,8 +314,10 @@
 				DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */,
 				DAB12E37215F4C4F00133E60 /* SkypeAnimationController.m in Sources */,
 				DAE79A79215B5BA00099F19B /* main.m in Sources */,
+				DA98649D215F7C1F007633C7 /* BallRotatePulseController.m in Sources */,
 				DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */,
 				DAB12E3A215F4C6100133E60 /* JWLoadingSkype.m in Sources */,
+				DA986499215F7BAD007633C7 /* JWLoadingBallRotatePulse.m in Sources */,
 				DAB12CE9215E2E8200133E60 /* JWLoadingMusic.m in Sources */,
 				DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */,
 				DAB12CD1215DB51000133E60 /* JWLoadingHourglass.m in Sources */,
