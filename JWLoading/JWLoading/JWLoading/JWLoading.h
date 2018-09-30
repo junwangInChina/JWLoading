@@ -13,3 +13,5 @@
 #import "JWLoadingMusic.h"
 #import "JWLoadingSkype.h"
 #import "JWLoadingBallRotatePulse.h"
+#import "JWLoadingArcRotate.h"
+#import "JWDotRotateOpacity.h"
