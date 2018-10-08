@@ -8,6 +8,9 @@
 
 #import "JWLoadingView.h"
 
+/*
+ 圆环
+ */
 @interface JWLoadingMultiRings : JWLoadingView
 
 @end

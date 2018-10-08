@@ -8,6 +8,9 @@
 
 #import "JWLoadingView.h"
 
+/*
+ 脉冲
+ */
 @interface JWLoadingMultiPulse : JWLoadingView
 
 @end

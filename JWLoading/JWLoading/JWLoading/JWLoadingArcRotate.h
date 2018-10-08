@@ -8,6 +8,9 @@
 
 #import "JWLoadingView.h"
 
+/*
+ 圆弧旋转
+ */
 @interface JWLoadingArcRotate : JWLoadingView
 
 @end

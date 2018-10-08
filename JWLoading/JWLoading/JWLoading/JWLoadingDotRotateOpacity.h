@@ -8,6 +8,9 @@
 
 #import "JWLoadingView.h"
 
+/*
+ 旋转的点
+ */
 @interface JWLoadingDotRotateOpacity : JWLoadingView
 
 @end

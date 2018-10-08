@@ -8,6 +8,9 @@
 
 #import "JWLoadingView.h"
 
+/*
+ 旋转的三角形
+ */
 @interface JWLoadingRotatingTrigon : JWLoadingView
 
 @end

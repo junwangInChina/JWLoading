@@ -8,6 +8,9 @@
 
 #import "JWLoadingView.h"
 
+/*
+ 吃东西
+ */
 @interface JWLoadingEating : JWLoadingView
 
 @end
