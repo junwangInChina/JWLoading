@@ -1,20 +1,20 @@
 //
-//  DotRotateAnimationController.m
+//  EatAnimationController.m
 //  JWLoading
 //
-//  Created by wangjun on 2018/9/30.
+//  Created by wangjun on 2018/10/8.
 //  Copyright © 2018年 wangjun. All rights reserved.
 //
 
-#import "DotRotateAnimationController.h"
+#import "EatAnimationController.h"
 
 #import "JWLoading.h"
 
-@interface DotRotateAnimationController ()
+@interface EatAnimationController ()
 
 @end
 
-@implementation DotRotateAnimationController
+@implementation EatAnimationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,8 +22,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    JWLoadingDotRotateOpacity *tempLoading = [JWLoadingDotRotateOpacity new];
-    tempLoading.backgroundColor = self.view.backgroundColor;
+    JWLoadingEating *tempLoading = [JWLoadingEating new];
+    tempLoading.backgroundColor = [UIColor grayColor];//self.view.backgroundColor;
     tempLoading.stroke_color = [UIColor redColor];
     tempLoading.center = CGPointMake(CGRectGetWidth(self.view.frame) / 2.0,
                                      CGRectGetHeight(self.view.frame) / 2.0);

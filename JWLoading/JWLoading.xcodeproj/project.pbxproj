@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA8E7354216AF35700C93703 /* EatAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7353216AF35700C93703 /* EatAnimationController.m */; };
+		DA8E7357216AF3A200C93703 /* JWLoadingEating.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7356216AF3A200C93703 /* JWLoadingEating.m */; };
+		DA8E735A216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7359216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m */; };
 		DA986499215F7BAD007633C7 /* JWLoadingBallRotatePulse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */; };
 		DA98649D215F7C1F007633C7 /* BallRotatePulseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98649C215F7C1F007633C7 /* BallRotatePulseController.m */; };
 		DA9864A1216072E6007633C7 /* ArcRotateAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9864A0216072E6007633C7 /* ArcRotateAnimationController.m */; };
 		DA9864A421607345007633C7 /* JWLoadingArcRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9864A321607345007633C7 /* JWLoadingArcRotate.m */; };
-		DA9864A72160C90B007633C7 /* JWDotRotateOpacity.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9864A62160C90B007633C7 /* JWDotRotateOpacity.m */; };
 		DA9864AB2160CE39007633C7 /* DotRotateAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9864AA2160CE39007633C7 /* DotRotateAnimationController.m */; };
 		DAB1265C215B5D3500133E60 /* JWLoadingHandwriting.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB1265B215B5D3500133E60 /* JWLoadingHandwriting.m */; };
 		DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB12CCA215CC8FD00133E60 /* HandwritingAnimationController.m */; };
@@ -35,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA8E7352216AF35700C93703 /* EatAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatAnimationController.h; sourceTree = "<group>"; };
+		DA8E7353216AF35700C93703 /* EatAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EatAnimationController.m; sourceTree = "<group>"; };
+		DA8E7355216AF3A200C93703 /* JWLoadingEating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingEating.h; sourceTree = "<group>"; };
+		DA8E7356216AF3A200C93703 /* JWLoadingEating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingEating.m; sourceTree = "<group>"; };
+		DA8E7358216AF3BB00C93703 /* JWLoadingDotRotateOpacity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingDotRotateOpacity.h; sourceTree = "<group>"; };
+		DA8E7359216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingDotRotateOpacity.m; sourceTree = "<group>"; };
 		DA986497215F7BAD007633C7 /* JWLoadingBallRotatePulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingBallRotatePulse.h; sourceTree = "<group>"; };
 		DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingBallRotatePulse.m; sourceTree = "<group>"; };
 		DA98649B215F7C1F007633C7 /* BallRotatePulseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallRotatePulseController.h; sourceTree = "<group>"; };
@@ -43,8 +51,6 @@
 		DA9864A0216072E6007633C7 /* ArcRotateAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcRotateAnimationController.m; sourceTree = "<group>"; };
 		DA9864A221607345007633C7 /* JWLoadingArcRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingArcRotate.h; sourceTree = "<group>"; };
 		DA9864A321607345007633C7 /* JWLoadingArcRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingArcRotate.m; sourceTree = "<group>"; };
-		DA9864A52160C90B007633C7 /* JWDotRotateOpacity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWDotRotateOpacity.h; sourceTree = "<group>"; };
-		DA9864A62160C90B007633C7 /* JWDotRotateOpacity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWDotRotateOpacity.m; sourceTree = "<group>"; };
 		DA9864A92160CE39007633C7 /* DotRotateAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DotRotateAnimationController.h; sourceTree = "<group>"; };
 		DA9864AA2160CE39007633C7 /* DotRotateAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DotRotateAnimationController.m; sourceTree = "<group>"; };
 		DAB12657215B5C5900133E60 /* JWLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoading.h; sourceTree = "<group>"; };
@@ -125,6 +131,15 @@
 			path = DotRotate;
 			sourceTree = "<group>";
 		};
+		DA9864AC216AF327007633C7 /* Eat */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E7352216AF35700C93703 /* EatAnimationController.h */,
+				DA8E7353216AF35700C93703 /* EatAnimationController.m */,
+			);
+			path = Eat;
+			sourceTree = "<group>";
+		};
 		DAB12CC7215CC8DD00133E60 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +152,7 @@
 				DA98649A215F7C06007633C7 /* BallRotatePulse */,
 				DA98649E2160726C007633C7 /* ArcRotate */,
 				DA9864A82160CE22007633C7 /* DotRotate */,
+				DA9864AC216AF327007633C7 /* Eat */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -252,8 +268,10 @@
 				DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */,
 				DA9864A221607345007633C7 /* JWLoadingArcRotate.h */,
 				DA9864A321607345007633C7 /* JWLoadingArcRotate.m */,
-				DA9864A52160C90B007633C7 /* JWDotRotateOpacity.h */,
-				DA9864A62160C90B007633C7 /* JWDotRotateOpacity.m */,
+				DA8E7358216AF3BB00C93703 /* JWLoadingDotRotateOpacity.h */,
+				DA8E7359216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m */,
+				DA8E7355216AF3A200C93703 /* JWLoadingEating.h */,
+				DA8E7356216AF3A200C93703 /* JWLoadingEating.m */,
 			);
 			path = JWLoading;
 			sourceTree = "<group>";
@@ -349,11 +367,11 @@
 				DAE79A6E215B5B9F0099F19B /* ViewController.m in Sources */,
 				DAB12CDB215DD10B00133E60 /* JWLoadingEqualize.m in Sources */,
 				DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */,
+				DA8E735A216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m in Sources */,
 				DAB12E37215F4C4F00133E60 /* SkypeAnimationController.m in Sources */,
 				DAE79A79215B5BA00099F19B /* main.m in Sources */,
 				DA98649D215F7C1F007633C7 /* BallRotatePulseController.m in Sources */,
 				DA9864A421607345007633C7 /* JWLoadingArcRotate.m in Sources */,
-				DA9864A72160C90B007633C7 /* JWDotRotateOpacity.m in Sources */,
 				DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */,
 				DAB12E3A215F4C6100133E60 /* JWLoadingSkype.m in Sources */,
 				DA986499215F7BAD007633C7 /* JWLoadingBallRotatePulse.m in Sources */,
@@ -364,8 +382,10 @@
 				DAB12CD8215DBEBD00133E60 /* HourglassAnimationController.m in Sources */,
 				DAB1265C215B5D3500133E60 /* JWLoadingHandwriting.m in Sources */,
 				DAB12CDF215DD14E00133E60 /* EqualizeAnimationController.m in Sources */,
+				DA8E7357216AF3A200C93703 /* JWLoadingEating.m in Sources */,
 				DAB12CE6215E034800133E60 /* JWLoadingRotatedotglow.m in Sources */,
 				DAB12CD4215DB56B00133E60 /* JWLoadingView.m in Sources */,
+				DA8E7354216AF35700C93703 /* EatAnimationController.m in Sources */,
 				DAB12CE3215E032200133E60 /* RotateDotGlowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

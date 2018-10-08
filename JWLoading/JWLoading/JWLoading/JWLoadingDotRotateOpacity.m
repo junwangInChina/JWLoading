@@ -1,12 +1,12 @@
 //
-//  JWDotRotateOpacity.m
+//  JWLoadingDotRotateOpacity.m
 //  JWLoading
 //
-//  Created by wangjun on 2018/9/30.
+//  Created by wangjun on 2018/10/8.
 //  Copyright © 2018年 wangjun. All rights reserved.
 //
 
-#import "JWDotRotateOpacity.h"
+#import "JWLoadingDotRotateOpacity.h"
 
 #import "JWLoadingDefine.h"
 
@@ -15,13 +15,13 @@
 #define kDotLayer_Margin 10
 #define kDot_Count       3
 
-@interface JWDotRotateOpacity()
+@interface JWLoadingDotRotateOpacity ()
 
 @property (nonatomic, strong) CAShapeLayer *mainShapeLayer;
 
 @end
 
-@implementation JWDotRotateOpacity
+@implementation JWLoadingDotRotateOpacity
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -53,7 +53,6 @@
     if (!_mainShapeLayer)
     {
         self.mainShapeLayer = [CAShapeLayer layer];
-        _mainShapeLayer.backgroundColor = [UIColor greenColor].CGColor;
         _mainShapeLayer.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
         _mainShapeLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
         _mainShapeLayer.position = CGPointMake(CGRectGetWidth(self.frame)/2.0, CGRectGetHeight(self.frame)/2.0);
@@ -62,7 +61,7 @@
         
         CGFloat tempX = (CGRectGetWidth(self.frame) - (kDot_Count * kDotLayer_Width + (kDot_Count - 1) * kDotLayer_Margin)) / 2.0;
         UIColor *tempColor = (self.backgroundColor == nil || self.backgroundColor == [UIColor clearColor]) ? self.superview.backgroundColor : self.backgroundColor;
-
+        
         BOOL hasMiddle = kDot_Count%2 > 0;
         
         for (NSInteger i = 0; i < kDot_Count; i++)

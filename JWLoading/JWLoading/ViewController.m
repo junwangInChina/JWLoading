@@ -33,7 +33,8 @@ static NSString *kLoadingCell = @"ViewControllerTableViewCellIdentifier";
                                              @{@"title":@"Skype",@"className":@"SkypeAnimationController"},
                                              @{@"title":@"小球旋转脉冲",@"className":@"BallRotatePulseController"},
                                              @{@"title":@"圆弧旋转",@"className":@"ArcRotateAnimationController"},
-                                             @{@"title":@"旋转的小点",@"className":@"DotRotateAnimationController"}]];
+                                             @{@"title":@"旋转的小点",@"className":@"DotRotateAnimationController"},
+                                             @{@"title":@"吃东西",@"className":@"EatAnimationController"}]];
     [self.loadingTableView reloadData];
 }
 

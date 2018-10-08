@@ -1,13 +1,13 @@
 //
-//  JWDotRotateOpacity.h
+//  JWLoadingEating.h
 //  JWLoading
 //
-//  Created by wangjun on 2018/9/30.
+//  Created by wangjun on 2018/10/8.
 //  Copyright © 2018年 wangjun. All rights reserved.
 //
 
 #import "JWLoadingView.h"
 
-@interface JWDotRotateOpacity : JWLoadingView
+@interface JWLoadingEating : JWLoadingView
 
 @end
