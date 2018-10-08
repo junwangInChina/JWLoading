@@ -45,6 +45,7 @@
     {
         tempHeight = 50;
     }
+    [super setFrame:CGRectMake(frame.origin.x, frame.origin.y, tempWidth, tempHeight)];
 }
 
 #pragma mark - Lazy loading
@@ -60,7 +61,6 @@
         _mainShapeLayer.speed = 0.0f;
         [self.layer addSublayer:_mainShapeLayer];
         
-        // 嘴巴
         UIColor *tempColor = (self.backgroundColor == nil || self.backgroundColor == [UIColor clearColor]) ? self.superview.backgroundColor : self.backgroundColor;
 
         UIBezierPath *tempMouthPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(0,0)

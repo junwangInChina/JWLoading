@@ -16,3 +16,6 @@
 #import "JWLoadingArcRotate.h"
 #import "JWLoadingDotRotateOpacity.h"
 #import "JWLoadingEating.h"
+#import "JWLoadingRotatingTrigon.h"
+#import "JWLoadingMultiPulse.h"
+#import "JWLoadingMultiRings.h"

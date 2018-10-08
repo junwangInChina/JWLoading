@@ -45,6 +45,7 @@
     {
         tempHeight = 50;
     }
+    [super setFrame:CGRectMake(frame.origin.x, frame.origin.y, tempWidth, tempHeight)];
 }
 
 #pragma mark - Lazy loading

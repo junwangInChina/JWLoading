@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA8C8C0A216B51700000B68D /* PulsesController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C09216B51700000B68D /* PulsesController.m */; };
+		DA8C8C0D216B517D0000B68D /* RingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C0C216B517D0000B68D /* RingsController.m */; };
+		DA8C8C10216B519F0000B68D /* JWLoadingMultiPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C0F216B519F0000B68D /* JWLoadingMultiPulse.m */; };
+		DA8C8C13216B51C10000B68D /* JWLoadingMultiRings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C12216B51C10000B68D /* JWLoadingMultiRings.m */; };
 		DA8E7354216AF35700C93703 /* EatAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7353216AF35700C93703 /* EatAnimationController.m */; };
 		DA8E7357216AF3A200C93703 /* JWLoadingEating.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7356216AF3A200C93703 /* JWLoadingEating.m */; };
 		DA8E735A216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7359216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m */; };
+		DA8E735D216B47D000C93703 /* JWLoadingRotatingTrigon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E735C216B47D000C93703 /* JWLoadingRotatingTrigon.m */; };
+		DA8E7361216B480A00C93703 /* RotatingTrigonController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7360216B480A00C93703 /* RotatingTrigonController.m */; };
 		DA986499215F7BAD007633C7 /* JWLoadingBallRotatePulse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */; };
 		DA98649D215F7C1F007633C7 /* BallRotatePulseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98649C215F7C1F007633C7 /* BallRotatePulseController.m */; };
 		DA9864A1216072E6007633C7 /* ArcRotateAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9864A0216072E6007633C7 /* ArcRotateAnimationController.m */; };
@@ -37,12 +43,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA8C8C08216B51700000B68D /* PulsesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulsesController.h; sourceTree = "<group>"; };
+		DA8C8C09216B51700000B68D /* PulsesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulsesController.m; sourceTree = "<group>"; };
+		DA8C8C0B216B517D0000B68D /* RingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RingsController.h; sourceTree = "<group>"; };
+		DA8C8C0C216B517D0000B68D /* RingsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RingsController.m; sourceTree = "<group>"; };
+		DA8C8C0E216B519F0000B68D /* JWLoadingMultiPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingMultiPulse.h; sourceTree = "<group>"; };
+		DA8C8C0F216B519F0000B68D /* JWLoadingMultiPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingMultiPulse.m; sourceTree = "<group>"; };
+		DA8C8C11216B51C10000B68D /* JWLoadingMultiRings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingMultiRings.h; sourceTree = "<group>"; };
+		DA8C8C12216B51C10000B68D /* JWLoadingMultiRings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingMultiRings.m; sourceTree = "<group>"; };
 		DA8E7352216AF35700C93703 /* EatAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatAnimationController.h; sourceTree = "<group>"; };
 		DA8E7353216AF35700C93703 /* EatAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EatAnimationController.m; sourceTree = "<group>"; };
 		DA8E7355216AF3A200C93703 /* JWLoadingEating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingEating.h; sourceTree = "<group>"; };
 		DA8E7356216AF3A200C93703 /* JWLoadingEating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingEating.m; sourceTree = "<group>"; };
 		DA8E7358216AF3BB00C93703 /* JWLoadingDotRotateOpacity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingDotRotateOpacity.h; sourceTree = "<group>"; };
 		DA8E7359216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingDotRotateOpacity.m; sourceTree = "<group>"; };
+		DA8E735B216B47D000C93703 /* JWLoadingRotatingTrigon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingRotatingTrigon.h; sourceTree = "<group>"; };
+		DA8E735C216B47D000C93703 /* JWLoadingRotatingTrigon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingRotatingTrigon.m; sourceTree = "<group>"; };
+		DA8E735F216B480A00C93703 /* RotatingTrigonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotatingTrigonController.h; sourceTree = "<group>"; };
+		DA8E7360216B480A00C93703 /* RotatingTrigonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotatingTrigonController.m; sourceTree = "<group>"; };
 		DA986497215F7BAD007633C7 /* JWLoadingBallRotatePulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingBallRotatePulse.h; sourceTree = "<group>"; };
 		DA986498215F7BAD007633C7 /* JWLoadingBallRotatePulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingBallRotatePulse.m; sourceTree = "<group>"; };
 		DA98649B215F7C1F007633C7 /* BallRotatePulseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallRotatePulseController.h; sourceTree = "<group>"; };
@@ -104,6 +122,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA8E735E216B47EF00C93703 /* RotatingTrigon */ = {
+			isa = PBXGroup;
+			children = (
+				DA8E735F216B480A00C93703 /* RotatingTrigonController.h */,
+				DA8E7360216B480A00C93703 /* RotatingTrigonController.m */,
+			);
+			path = RotatingTrigon;
+			sourceTree = "<group>";
+		};
+		DA8E7362216B50DF00C93703 /* Rings */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C8C0B216B517D0000B68D /* RingsController.h */,
+				DA8C8C0C216B517D0000B68D /* RingsController.m */,
+			);
+			path = Rings;
+			sourceTree = "<group>";
+		};
+		DA8E7363216B50DF00C93703 /* Pulses */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C8C08216B51700000B68D /* PulsesController.h */,
+				DA8C8C09216B51700000B68D /* PulsesController.m */,
+			);
+			path = Pulses;
+			sourceTree = "<group>";
+		};
 		DA98649A215F7C06007633C7 /* BallRotatePulse */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +198,9 @@
 				DA98649E2160726C007633C7 /* ArcRotate */,
 				DA9864A82160CE22007633C7 /* DotRotate */,
 				DA9864AC216AF327007633C7 /* Eat */,
+				DA8E735E216B47EF00C93703 /* RotatingTrigon */,
+				DA8E7363216B50DF00C93703 /* Pulses */,
+				DA8E7362216B50DF00C93703 /* Rings */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -272,6 +320,12 @@
 				DA8E7359216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m */,
 				DA8E7355216AF3A200C93703 /* JWLoadingEating.h */,
 				DA8E7356216AF3A200C93703 /* JWLoadingEating.m */,
+				DA8E735B216B47D000C93703 /* JWLoadingRotatingTrigon.h */,
+				DA8E735C216B47D000C93703 /* JWLoadingRotatingTrigon.m */,
+				DA8C8C0E216B519F0000B68D /* JWLoadingMultiPulse.h */,
+				DA8C8C0F216B519F0000B68D /* JWLoadingMultiPulse.m */,
+				DA8C8C11216B51C10000B68D /* JWLoadingMultiRings.h */,
+				DA8C8C12216B51C10000B68D /* JWLoadingMultiRings.m */,
 			);
 			path = JWLoading;
 			sourceTree = "<group>";
@@ -366,18 +420,24 @@
 				DA9864A1216072E6007633C7 /* ArcRotateAnimationController.m in Sources */,
 				DAE79A6E215B5B9F0099F19B /* ViewController.m in Sources */,
 				DAB12CDB215DD10B00133E60 /* JWLoadingEqualize.m in Sources */,
+				DA8C8C13216B51C10000B68D /* JWLoadingMultiRings.m in Sources */,
 				DAB12CCB215CC8FD00133E60 /* HandwritingAnimationController.m in Sources */,
 				DA8E735A216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m in Sources */,
 				DAB12E37215F4C4F00133E60 /* SkypeAnimationController.m in Sources */,
 				DAE79A79215B5BA00099F19B /* main.m in Sources */,
+				DA8C8C0D216B517D0000B68D /* RingsController.m in Sources */,
 				DA98649D215F7C1F007633C7 /* BallRotatePulseController.m in Sources */,
+				DA8E735D216B47D000C93703 /* JWLoadingRotatingTrigon.m in Sources */,
 				DA9864A421607345007633C7 /* JWLoadingArcRotate.m in Sources */,
+				DA8C8C10216B519F0000B68D /* JWLoadingMultiPulse.m in Sources */,
 				DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */,
 				DAB12E3A215F4C6100133E60 /* JWLoadingSkype.m in Sources */,
 				DA986499215F7BAD007633C7 /* JWLoadingBallRotatePulse.m in Sources */,
+				DA8C8C0A216B51700000B68D /* PulsesController.m in Sources */,
 				DAB12CE9215E2E8200133E60 /* JWLoadingMusic.m in Sources */,
 				DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */,
 				DAB12CD1215DB51000133E60 /* JWLoadingHourglass.m in Sources */,
+				DA8E7361216B480A00C93703 /* RotatingTrigonController.m in Sources */,
 				DA9864AB2160CE39007633C7 /* DotRotateAnimationController.m in Sources */,
 				DAB12CD8215DBEBD00133E60 /* HourglassAnimationController.m in Sources */,
 				DAB1265C215B5D3500133E60 /* JWLoadingHandwriting.m in Sources */,

@@ -1,20 +1,20 @@
 //
-//  EatAnimationController.m
+//  PulsesController.m
 //  JWLoading
 //
 //  Created by wangjun on 2018/10/8.
 //  Copyright © 2018年 wangjun. All rights reserved.
 //
 
-#import "EatAnimationController.h"
+#import "PulsesController.h"
 
 #import "JWLoading.h"
 
-@interface EatAnimationController ()
+@interface PulsesController ()
 
 @end
 
-@implementation EatAnimationController
+@implementation PulsesController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    JWLoadingEating *tempLoading = [JWLoadingEating new];
+    JWLoadingMultiPulse *tempLoading = [JWLoadingMultiPulse new];
     tempLoading.backgroundColor = self.view.backgroundColor;
     tempLoading.stroke_color = [UIColor redColor];
     tempLoading.center = CGPointMake(CGRectGetWidth(self.view.frame) / 2.0,
