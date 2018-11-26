@@ -77,16 +77,16 @@
         
         // 草地
         CAShapeLayer *tempLeftLawnLayer = [self lawnLayerWithPath:[self leftLawnPath]
-                                                             fill:[UIColor colorWithDisplayP3Red:92.0/255.0 green:195.0/255.0 blue:52.0/255.0 alpha:1.0]];
+                                                             fill:[UIColor colorWithRed:92.0/255.0 green:195.0/255.0 blue:52.0/255.0 alpha:1.0]];
         [_mainShapeLayer addSublayer:tempLeftLawnLayer];
         
         CAShapeLayer *tempRightLawnLayer = [self lawnLayerWithPath:[self rightLawnPath]
-                                                              fill:[UIColor colorWithDisplayP3Red:82.0/255.0 green:177.0/255.0 blue:52.0/255.0 alpha:0.8]];
+                                                              fill:[UIColor colorWithRed:82.0/255.0 green:177.0/255.0 blue:52.0/255.0 alpha:0.8]];
         [_mainShapeLayer insertSublayer:tempRightLawnLayer above:tempLeftLawnLayer];
         
         // 黄色轨道
         CAShapeLayer *tempYellowTrackLayer = [self trackLayerWithPath:[self yellowTrackPath]
-                                                               stroke:[UIColor colorWithDisplayP3Red:210.0/255.0 green:179.0/255.0 blue:54.0/255.0 alpha:1.0]
+                                                               stroke:[UIColor colorWithRed:210.0/255.0 green:179.0/255.0 blue:54.0/255.0 alpha:1.0]
                                                                  fill:[UIColor colorWithPatternImage:[UIImage imageNamed:JWLOADING_IMAGE_NAME(@"track_yellow@3x")]]];
         [_mainShapeLayer addSublayer:tempYellowTrackLayer];
         
@@ -98,7 +98,7 @@
         
         // 绿色轨道
         CAShapeLayer *tempGreenTrackLayer = [self trackLayerWithPath:[self greenTrackPath]
-                                                              stroke:[UIColor colorWithDisplayP3Red:0.0/255.0 green:147.0/255.0 blue:163.0/255.0 alpha:1.0]
+                                                              stroke:[UIColor colorWithRed:0.0/255.0 green:147.0/255.0 blue:163.0/255.0 alpha:1.0]
                                                                 fill:[UIColor colorWithPatternImage:[UIImage imageNamed:JWLOADING_IMAGE_NAME(@"track_green@3x")]]];
         [_mainShapeLayer insertSublayer:tempGreenTrackLayer above:tempYellowTrackLayer];
         
