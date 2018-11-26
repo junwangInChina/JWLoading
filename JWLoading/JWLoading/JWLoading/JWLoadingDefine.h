@@ -10,6 +10,7 @@
 
 #define JWLOADING_SCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
 #define JWLOADING_SCREEN_HEIGHT  ([UIScreen mainScreen].bounds.size.height)
+#define JWLOADING_IMAGE_NAME(name)    [NSString stringWithFormat:@"JWLoading.bundle/%@",(name)]
 
 NS_INLINE UIColor *JWLoadingReverseColor(UIColor *color)
 {

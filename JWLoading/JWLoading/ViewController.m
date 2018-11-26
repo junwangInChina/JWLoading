@@ -37,7 +37,8 @@ static NSString *kLoadingCell = @"ViewControllerTableViewCellIdentifier";
                                              @{@"title":@"吃东西",@"className":@"EatAnimationController"},
                                              @{@"title":@"旋转三角形",@"className":@"RotatingTrigonController"},
                                              @{@"title":@"脉冲",@"className":@"PulsesController"},
-                                             @{@"title":@"圆环",@"className":@"RingsController"}]];
+                                             @{@"title":@"圆环",@"className":@"RingsController"},
+                                             @{@"title":@"过山车",@"className":@"RollerCoasterController"}]];
     [self.loadingTableView reloadData];
 }
 

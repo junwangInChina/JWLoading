@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JWLoading"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Loading动画。"
 
   #主页
@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
 
   #库文件路径
   s.source_files  = "JWLoading/JWLoading/JWLoading/**/*.{h,m}"
+  s.resource_bundles = {
+    'JWLoading' => ['JWLoading/JWLoading/JWLoading/JWLoading.bundle/*.png']
+  }
   #是否ARC
   s.requires_arc = true
 

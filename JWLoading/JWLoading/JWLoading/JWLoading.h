@@ -19,3 +19,4 @@
 #import "JWLoadingRotatingTrigon.h"
 #import "JWLoadingMultiPulse.h"
 #import "JWLoadingMultiRings.h"
+#import "JWLoadingRollerCoaster.h"

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3AF2C521AA6A06002E2764 /* JWLoadingRollerCoaster.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF2C421AA6A06002E2764 /* JWLoadingRollerCoaster.m */; };
+		DA3AF2C921AA6A69002E2764 /* RollerCoasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF2C821AA6A69002E2764 /* RollerCoasterController.m */; };
+		DA3AF2CB21AB929F002E2764 /* JWLoading.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA3AF2CA21AB929F002E2764 /* JWLoading.bundle */; };
 		DA8C8C0A216B51700000B68D /* PulsesController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C09216B51700000B68D /* PulsesController.m */; };
 		DA8C8C0D216B517D0000B68D /* RingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C0C216B517D0000B68D /* RingsController.m */; };
 		DA8C8C10216B519F0000B68D /* JWLoadingMultiPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C0F216B519F0000B68D /* JWLoadingMultiPulse.m */; };
@@ -43,6 +46,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3AF2C321AA6A06002E2764 /* JWLoadingRollerCoaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingRollerCoaster.h; sourceTree = "<group>"; };
+		DA3AF2C421AA6A06002E2764 /* JWLoadingRollerCoaster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingRollerCoaster.m; sourceTree = "<group>"; };
+		DA3AF2C721AA6A69002E2764 /* RollerCoasterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RollerCoasterController.h; sourceTree = "<group>"; };
+		DA3AF2C821AA6A69002E2764 /* RollerCoasterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollerCoasterController.m; sourceTree = "<group>"; };
+		DA3AF2CA21AB929F002E2764 /* JWLoading.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JWLoading.bundle; sourceTree = "<group>"; };
 		DA8C8C08216B51700000B68D /* PulsesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PulsesController.h; sourceTree = "<group>"; };
 		DA8C8C09216B51700000B68D /* PulsesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulsesController.m; sourceTree = "<group>"; };
 		DA8C8C0B216B517D0000B68D /* RingsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RingsController.h; sourceTree = "<group>"; };
@@ -122,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3AF2C621AA6A42002E2764 /* RollerCoaster */ = {
+			isa = PBXGroup;
+			children = (
+				DA3AF2C721AA6A69002E2764 /* RollerCoasterController.h */,
+				DA3AF2C821AA6A69002E2764 /* RollerCoasterController.m */,
+			);
+			path = RollerCoaster;
+			sourceTree = "<group>";
+		};
 		DA8E735E216B47EF00C93703 /* RotatingTrigon */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +218,7 @@
 				DA8E735E216B47EF00C93703 /* RotatingTrigon */,
 				DA8E7363216B50DF00C93703 /* Pulses */,
 				DA8E7362216B50DF00C93703 /* Rings */,
+				DA3AF2C621AA6A42002E2764 /* RollerCoaster */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -326,6 +344,9 @@
 				DA8C8C0F216B519F0000B68D /* JWLoadingMultiPulse.m */,
 				DA8C8C11216B51C10000B68D /* JWLoadingMultiRings.h */,
 				DA8C8C12216B51C10000B68D /* JWLoadingMultiRings.m */,
+				DA3AF2C321AA6A06002E2764 /* JWLoadingRollerCoaster.h */,
+				DA3AF2C421AA6A06002E2764 /* JWLoadingRollerCoaster.m */,
+				DA3AF2CA21AB929F002E2764 /* JWLoading.bundle */,
 			);
 			path = JWLoading;
 			sourceTree = "<group>";
@@ -391,6 +412,7 @@
 				DAE79A76215B5BA00099F19B /* LaunchScreen.storyboard in Resources */,
 				DAE79A73215B5BA00099F19B /* Assets.xcassets in Resources */,
 				DAE79A71215B5B9F0099F19B /* Main.storyboard in Resources */,
+				DA3AF2CB21AB929F002E2764 /* JWLoading.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +455,7 @@
 				DAB12CED215E2F4400133E60 /* MusicAnimationController.m in Sources */,
 				DAB12E3A215F4C6100133E60 /* JWLoadingSkype.m in Sources */,
 				DA986499215F7BAD007633C7 /* JWLoadingBallRotatePulse.m in Sources */,
+				DA3AF2C521AA6A06002E2764 /* JWLoadingRollerCoaster.m in Sources */,
 				DA8C8C0A216B51700000B68D /* PulsesController.m in Sources */,
 				DAB12CE9215E2E8200133E60 /* JWLoadingMusic.m in Sources */,
 				DAE79A6B215B5B9F0099F19B /* AppDelegate.m in Sources */,
@@ -441,6 +464,7 @@
 				DA9864AB2160CE39007633C7 /* DotRotateAnimationController.m in Sources */,
 				DAB12CD8215DBEBD00133E60 /* HourglassAnimationController.m in Sources */,
 				DAB1265C215B5D3500133E60 /* JWLoadingHandwriting.m in Sources */,
+				DA3AF2C921AA6A69002E2764 /* RollerCoasterController.m in Sources */,
 				DAB12CDF215DD14E00133E60 /* EqualizeAnimationController.m in Sources */,
 				DA8E7357216AF3A200C93703 /* JWLoadingEating.m in Sources */,
 				DAB12CE6215E034800133E60 /* JWLoadingRotatedotglow.m in Sources */,
