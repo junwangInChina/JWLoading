@@ -65,23 +65,31 @@
         
         [self.layer addSublayer:_mainShapeLayer];
         
+        
         // 渐变背景
         CAGradientLayer *tempBgLayer = [CAGradientLayer layer];
         tempBgLayer.frame = CGRectMake(0, 0, CGRectGetWidth(_mainShapeLayer.frame), CGRectGetHeight(_mainShapeLayer.frame));
-        UIColor *lightColor = [UIColor colorWithRed:40.0 / 255.0 green:150.0 / 255.0 blue:200.0 / 255.0 alpha:1.0];
-        UIColor *darkColor = [UIColor colorWithRed:255.0 / 255.0 green:250.0 / 255.0 blue:250.0 / 255.0 alpha:1.0];
+        UIColor *lightColor = [UIColor colorWithRed:178.0/255.0 green:226.0/255.0 blue:248.0/255.0 alpha:1.0];
+        UIColor *darkColor = [UIColor colorWithRed:232.0/255.0 green:244.0/255.0 blue:193.0/255.0 alpha:1.0];
         tempBgLayer.colors = @[(__bridge id)lightColor.CGColor, (__bridge id)darkColor.CGColor];
         tempBgLayer.startPoint = CGPointMake(0, 0);
         tempBgLayer.endPoint = CGPointMake(1, 1);
         [_mainShapeLayer addSublayer:tempBgLayer];
         
+        // 山体
+        CAShapeLayer *tempLaftMountainLayer = [self leftSnowMountainLayer];
+        [_mainShapeLayer addSublayer:tempLaftMountainLayer];
+        
+        CAShapeLayer *tempRightMountainLayer = [self rightSnowMountainLayer];
+        [_mainShapeLayer insertSublayer:tempRightMountainLayer above:tempLaftMountainLayer];
+        
         // 草地
         CAShapeLayer *tempLeftLawnLayer = [self lawnLayerWithPath:[self leftLawnPath]
-                                                             fill:[UIColor colorWithRed:92.0/255.0 green:195.0/255.0 blue:52.0/255.0 alpha:1.0]];
+                                                             fill:[UIColor colorWithRed:82.0/255.0 green:177.0/255.0 blue:44.0/255.0 alpha:1.0]];
         [_mainShapeLayer addSublayer:tempLeftLawnLayer];
         
         CAShapeLayer *tempRightLawnLayer = [self lawnLayerWithPath:[self rightLawnPath]
-                                                              fill:[UIColor colorWithRed:82.0/255.0 green:177.0/255.0 blue:52.0/255.0 alpha:0.8]];
+                                                              fill:[UIColor colorWithRed:92.0/255.0 green:195.0/255.0 blue:52.0/255.0 alpha:1.0]];
         [_mainShapeLayer insertSublayer:tempRightLawnLayer above:tempLeftLawnLayer];
         
         // 黄色轨道
@@ -90,11 +98,17 @@
                                                                  fill:[UIColor colorWithPatternImage:[UIImage imageNamed:JWLOADING_IMAGE_NAME(@"track_yellow@3x")]]];
         [_mainShapeLayer addSublayer:tempYellowTrackLayer];
         
-        // 黄色动画
-        [self animationWithCar:JWLOADING_IMAGE_NAME(@"car_up@3x")
-                    superLayer:tempYellowTrackLayer
-                      duration:4.0
-                         begin:CACurrentMediaTime()+1];
+        
+        CFTimeInterval tempYellowTime = CACurrentMediaTime();
+        for (NSInteger i = 0; i < 5; i++)
+        {
+            // 黄色动画
+            [self animationWithCar:JWLOADING_IMAGE_NAME(@"car_up@3x")
+                        superLayer:tempYellowTrackLayer
+                          duration:5
+                             begin:tempYellowTime+0.07*(i*10/10.0)];
+        }
+        
         
         // 绿色轨道
         CAShapeLayer *tempGreenTrackLayer = [self trackLayerWithPath:[self greenTrackPath]
@@ -102,11 +116,16 @@
                                                                 fill:[UIColor colorWithPatternImage:[UIImage imageNamed:JWLOADING_IMAGE_NAME(@"track_green@3x")]]];
         [_mainShapeLayer insertSublayer:tempGreenTrackLayer above:tempYellowTrackLayer];
         
-        // 绿色动画
-        [self animationWithCar:JWLOADING_IMAGE_NAME(@"car_down@3x")
-                    superLayer:tempGreenTrackLayer
-                      duration:5.0
-                         begin:CACurrentMediaTime()];
+        CFTimeInterval tempGreenTime = CACurrentMediaTime();
+        for (NSInteger i = 0; i < 5; i++)
+        {
+            // 绿色动画
+            [self animationWithCar:JWLOADING_IMAGE_NAME(@"car_down@3x")
+                        superLayer:tempGreenTrackLayer
+                          duration:5
+                             begin:tempGreenTime+0.075*(i*10/10.0)];
+        }
+        
         
         // 白云
         CALayer *tempCloudLayer = [self cloudLayer];
@@ -116,6 +135,90 @@
 }
 
 #pragma mark - Helper
+- (CAShapeLayer *)leftSnowMountainLayer
+{
+    UIBezierPath *tempPath = [UIBezierPath bezierPath];
+    [tempPath moveToPoint:CGPointMake(0,
+                                      CGRectGetHeight(self.mainShapeLayer.frame)*0.8)];
+    [tempPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.15,
+                                         CGRectGetHeight(self.mainShapeLayer.frame)*0.3)];
+    [tempPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.4,
+                                         CGRectGetHeight(self.mainShapeLayer.frame))];
+    [tempPath addLineToPoint:CGPointMake(0,
+                                         CGRectGetHeight(self.mainShapeLayer.frame))];
+    
+    UIBezierPath *tempCoverPath = [UIBezierPath bezierPath];
+    [tempCoverPath moveToPoint:CGPointMake(0,
+                                           CGRectGetHeight(self.mainShapeLayer.frame)*0.8)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.1,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.47)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.12,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.5)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.14,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.45)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.16,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.53)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.18,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.45)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.21,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.47)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.4,
+                                              CGRectGetHeight(self.mainShapeLayer.frame))];
+    [tempCoverPath addLineToPoint:CGPointMake(0,
+                                              CGRectGetHeight(self.mainShapeLayer.frame))];
+    
+    CAShapeLayer *tempLayer = [CAShapeLayer layer];
+    tempLayer.path = tempPath.CGPath;
+    tempLayer.fillColor = [UIColor whiteColor].CGColor;
+    
+    CAShapeLayer *tempCoverLayer = [CAShapeLayer layer];
+    tempCoverLayer.path = tempCoverPath.CGPath;
+    tempCoverLayer.fillColor = [UIColor colorWithRed:104.0/255.0 green:92.0/255.0 blue:157.0/255.0 alpha:1.0].CGColor;
+    [tempLayer addSublayer:tempCoverLayer];
+    
+    return tempLayer;
+}
+
+- (CAShapeLayer *)rightSnowMountainLayer
+{
+    UIBezierPath *tempPath = [UIBezierPath bezierPath];
+    [tempPath moveToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.25,
+                                      CGRectGetHeight(self.mainShapeLayer.frame))];
+    [tempPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.45,
+                                         CGRectGetHeight(self.mainShapeLayer.frame)*0.55)];
+    [tempPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.65,
+                                         CGRectGetHeight(self.mainShapeLayer.frame))];
+    
+    UIBezierPath *tempCoverPath = [UIBezierPath bezierPath];
+    [tempCoverPath moveToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.25,
+                                           CGRectGetHeight(self.mainShapeLayer.frame))];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.4,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.6625)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.42,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.69)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.44,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.65)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.46,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.68)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.475,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.64)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.5,
+                                              CGRectGetHeight(self.mainShapeLayer.frame)*0.6625)];
+    [tempCoverPath addLineToPoint:CGPointMake(CGRectGetWidth(self.mainShapeLayer.frame)*0.65,
+                                              CGRectGetHeight(self.mainShapeLayer.frame))];
+    
+    CAShapeLayer *tempLayer = [CAShapeLayer layer];
+    tempLayer.path = tempPath.CGPath;
+    tempLayer.fillColor = [UIColor whiteColor].CGColor;
+    
+    CAShapeLayer *tempCoverLayer = [CAShapeLayer layer];
+    tempCoverLayer.path = tempCoverPath.CGPath;
+    tempCoverLayer.fillColor = [UIColor colorWithRed:75.0/255.0 green:65.0/255.0 blue:111.0/255.0 alpha:1.0].CGColor;
+    [tempLayer addSublayer:tempCoverLayer];
+    
+    return tempLayer;
+}
+
 - (CAShapeLayer *)lawnLayerWithPath:(UIBezierPath *)path fill:(UIColor *)fill
 {
     CAShapeLayer *tempLayer = [CAShapeLayer layer];
@@ -162,6 +265,7 @@
     tempAnimation.repeatCount = CGFLOAT_MAX;
     tempAnimation.calculationMode = kCAAnimationPaced;
     tempAnimation.rotationMode = kCAAnimationRotateAuto;
+    tempAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     
     [superLayer addSublayer:tempCarLayer];
     [tempCarLayer addAnimation:tempAnimation forKey:@""];
