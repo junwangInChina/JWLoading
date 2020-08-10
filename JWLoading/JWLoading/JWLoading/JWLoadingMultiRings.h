@@ -13,4 +13,7 @@
  */
 @interface JWLoadingMultiRings : JWLoadingView
 
+@property (nonatomic, assign) CGFloat rings_radius;
+@property (nonatomic, assign) NSInteger rings_count;
+
 @end

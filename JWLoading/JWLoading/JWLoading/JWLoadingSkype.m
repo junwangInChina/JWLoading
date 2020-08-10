@@ -125,6 +125,11 @@
     self.mainShapeLayer.speed = 1.0;
 }
 
+- (void)stopAnimation
+{
+    self.mainShapeLayer.speed = 0.0;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

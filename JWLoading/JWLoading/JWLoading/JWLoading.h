@@ -20,3 +20,4 @@
 #import "JWLoadingMultiPulse.h"
 #import "JWLoadingMultiRings.h"
 #import "JWLoadingRollerCoaster.h"
+#import "JWLoadingWellPattern.h"

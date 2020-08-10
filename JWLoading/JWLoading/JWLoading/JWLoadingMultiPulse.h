@@ -13,4 +13,7 @@
  */
 @interface JWLoadingMultiPulse : JWLoadingView
 
+@property (nonatomic, assign) CGFloat pulse_radius;
+@property (nonatomic, assign) NSInteger pulse_count;
+
 @end

@@ -27,6 +27,8 @@
     if (self)
     {
         self.frame = CGRectMake(0, 0, 50, 50);
+        self.pulse_radius = kPulseLayer_Radiu;
+        self.pulse_count = kPulse_Count;
     }
     return self;
 }
@@ -63,13 +65,13 @@
 
         NSTimeInterval beginTime = CACurrentMediaTime();
 
-        for (NSInteger i = 0; i < kPulse_Count; i++)
+        for (NSInteger i = 0; i < self.pulse_count; i++)
         {
             CALayer *tempLayer = [CALayer layer];
-            tempLayer.frame = CGRectMake(0, 0, kPulseLayer_Radiu, kPulseLayer_Radiu);
+            tempLayer.frame = CGRectMake(0, 0, self.pulse_radius, self.pulse_radius);
             tempLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
             tempLayer.position = CGPointMake(CGRectGetWidth(self.frame)/2.0f, CGRectGetHeight(self.frame)/2.0);
-            tempLayer.cornerRadius = kPulseLayer_Radiu/2.0;
+            tempLayer.cornerRadius = self.pulse_radius/2.0;
             tempLayer.backgroundColor = (self.stroke_color && self.stroke_color != [UIColor clearColor]) ? self.stroke_color.CGColor : JWLoadingReverseColor(tempColor).CGColor;
             tempLayer.opacity = 0.8f;
             tempLayer.transform = CATransform3DMakeScale(0, 0, 0);
@@ -105,6 +107,11 @@
 - (void)startAnimation
 {
     self.mainShapeLayer.speed = 1.0f;
+}
+
+- (void)stopAnimation
+{
+    self.mainShapeLayer.speed = 0.0;
 }
 
 /*

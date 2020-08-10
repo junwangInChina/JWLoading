@@ -23,6 +23,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     JWLoadingMultiRings *tempLoading = [JWLoadingMultiRings new];
+    tempLoading.rings_radius = 200;
+    tempLoading.rings_count = 5;
     tempLoading.backgroundColor = self.view.backgroundColor;
     tempLoading.stroke_color = [UIColor redColor];
     tempLoading.center = CGPointMake(CGRectGetWidth(self.view.frame) / 2.0,

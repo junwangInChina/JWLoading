@@ -14,6 +14,8 @@
 		DA8C8C0D216B517D0000B68D /* RingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C0C216B517D0000B68D /* RingsController.m */; };
 		DA8C8C10216B519F0000B68D /* JWLoadingMultiPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C0F216B519F0000B68D /* JWLoadingMultiPulse.m */; };
 		DA8C8C13216B51C10000B68D /* JWLoadingMultiRings.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C8C12216B51C10000B68D /* JWLoadingMultiRings.m */; };
+		DA8D78F421AE317600EA5E69 /* JWLoadingWellPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D78F321AE317600EA5E69 /* JWLoadingWellPattern.m */; };
+		DA8D78F821AE31C600EA5E69 /* WellPatternController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D78F721AE31C600EA5E69 /* WellPatternController.m */; };
 		DA8E7354216AF35700C93703 /* EatAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7353216AF35700C93703 /* EatAnimationController.m */; };
 		DA8E7357216AF3A200C93703 /* JWLoadingEating.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7356216AF3A200C93703 /* JWLoadingEating.m */; };
 		DA8E735A216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E7359216AF3BB00C93703 /* JWLoadingDotRotateOpacity.m */; };
@@ -59,6 +61,10 @@
 		DA8C8C0F216B519F0000B68D /* JWLoadingMultiPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingMultiPulse.m; sourceTree = "<group>"; };
 		DA8C8C11216B51C10000B68D /* JWLoadingMultiRings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingMultiRings.h; sourceTree = "<group>"; };
 		DA8C8C12216B51C10000B68D /* JWLoadingMultiRings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingMultiRings.m; sourceTree = "<group>"; };
+		DA8D78F221AE317600EA5E69 /* JWLoadingWellPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingWellPattern.h; sourceTree = "<group>"; };
+		DA8D78F321AE317600EA5E69 /* JWLoadingWellPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWLoadingWellPattern.m; sourceTree = "<group>"; };
+		DA8D78F621AE31C600EA5E69 /* WellPatternController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WellPatternController.h; sourceTree = "<group>"; };
+		DA8D78F721AE31C600EA5E69 /* WellPatternController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WellPatternController.m; sourceTree = "<group>"; };
 		DA8E7352216AF35700C93703 /* EatAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EatAnimationController.h; sourceTree = "<group>"; };
 		DA8E7353216AF35700C93703 /* EatAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EatAnimationController.m; sourceTree = "<group>"; };
 		DA8E7355216AF3A200C93703 /* JWLoadingEating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWLoadingEating.h; sourceTree = "<group>"; };
@@ -137,6 +143,15 @@
 				DA3AF2C821AA6A69002E2764 /* RollerCoasterController.m */,
 			);
 			path = RollerCoaster;
+			sourceTree = "<group>";
+		};
+		DA8D78F521AE31AB00EA5E69 /* WellPattern */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D78F621AE31C600EA5E69 /* WellPatternController.h */,
+				DA8D78F721AE31C600EA5E69 /* WellPatternController.m */,
+			);
+			path = WellPattern;
 			sourceTree = "<group>";
 		};
 		DA8E735E216B47EF00C93703 /* RotatingTrigon */ = {
@@ -219,6 +234,7 @@
 				DA8E7363216B50DF00C93703 /* Pulses */,
 				DA8E7362216B50DF00C93703 /* Rings */,
 				DA3AF2C621AA6A42002E2764 /* RollerCoaster */,
+				DA8D78F521AE31AB00EA5E69 /* WellPattern */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -346,6 +362,8 @@
 				DA8C8C12216B51C10000B68D /* JWLoadingMultiRings.m */,
 				DA3AF2C321AA6A06002E2764 /* JWLoadingRollerCoaster.h */,
 				DA3AF2C421AA6A06002E2764 /* JWLoadingRollerCoaster.m */,
+				DA8D78F221AE317600EA5E69 /* JWLoadingWellPattern.h */,
+				DA8D78F321AE317600EA5E69 /* JWLoadingWellPattern.m */,
 				DA3AF2CA21AB929F002E2764 /* JWLoading.bundle */,
 			);
 			path = JWLoading;
@@ -430,7 +448,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n// 获取当前的build号 读取plist文件\nbuild_version=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" \"${PROJECT_DIR}/JWLoading/Info.plist\")\n// 获取当前的version号 读取plist文件\nshort_version=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\n// 截取\nbuild_last=${build_version##*.}\n// 自增后缀\nbuild_inc_suffix=$(($build_last + 1))\n// 时间后缀\ndate_suffix=`date +\"%Y%m%d%H%M%S\"`\n// 拼接build号  version+时间后缀\nbuild_version=\"$short_version.$build_inc_suffix\"\n// 设置到\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_version\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+			shellScript = "#!/bin/bash\n// 获取当前的build号 读取plist文件\nbuild_version=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" \"${PROJECT_DIR}/JWLoading/Info.plist\")\n// 获取当前的version号 读取plist文件\nshort_version=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\n// 截取\nbuild_last=${build_version##*.}\n// 自增后缀\nbuild_inc_suffix=$(($build_last + 1))\n// 时间后缀\ndate_suffix=`date +\"%Y%m%d%H%M%S\"`\n// 拼接build号  version+时间后缀\nbuild_version=\"$short_version.$build_inc_suffix\"\n// 设置到\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $build_version\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -448,6 +466,7 @@
 				DAB12E37215F4C4F00133E60 /* SkypeAnimationController.m in Sources */,
 				DAE79A79215B5BA00099F19B /* main.m in Sources */,
 				DA8C8C0D216B517D0000B68D /* RingsController.m in Sources */,
+				DA8D78F421AE317600EA5E69 /* JWLoadingWellPattern.m in Sources */,
 				DA98649D215F7C1F007633C7 /* BallRotatePulseController.m in Sources */,
 				DA8E735D216B47D000C93703 /* JWLoadingRotatingTrigon.m in Sources */,
 				DA9864A421607345007633C7 /* JWLoadingArcRotate.m in Sources */,
@@ -470,6 +489,7 @@
 				DAB12CE6215E034800133E60 /* JWLoadingRotatedotglow.m in Sources */,
 				DAB12CD4215DB56B00133E60 /* JWLoadingView.m in Sources */,
 				DA8E7354216AF35700C93703 /* EatAnimationController.m in Sources */,
+				DA8D78F821AE31C600EA5E69 /* WellPatternController.m in Sources */,
 				DAB12CE3215E032200133E60 /* RotateDotGlowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

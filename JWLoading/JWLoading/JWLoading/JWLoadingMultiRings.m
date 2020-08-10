@@ -27,6 +27,8 @@
     if (self)
     {
         self.frame = CGRectMake(0, 0, 50, 50);
+        self.rings_radius = kRingsLayer_Radiu;
+        self.rings_count = kRings_Count;
     }
     return self;
 }
@@ -60,14 +62,14 @@
         [self.layer addSublayer:_mainShapeLayer];
         
         UIColor *tempColor = (self.backgroundColor == nil || self.backgroundColor == [UIColor clearColor]) ? self.superview.backgroundColor : self.backgroundColor;
-        UIBezierPath *tempPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, kRingsLayer_Radiu, kRingsLayer_Radiu)];
+        UIBezierPath *tempPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, self.rings_radius, self.rings_radius)];
 
         NSTimeInterval beginTime = CACurrentMediaTime();
         
-        for (NSInteger i = 0; i < kRings_Count; i++)
+        for (NSInteger i = 0; i < self.rings_count; i++)
         {
             CAShapeLayer *tempLayer = [CAShapeLayer layer];
-            tempLayer.frame = CGRectMake(0, 0, kRingsLayer_Radiu, kRingsLayer_Radiu);
+            tempLayer.frame = CGRectMake(0, 0, self.rings_radius, self.rings_radius);
             tempLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
             tempLayer.position = CGPointMake(CGRectGetWidth(self.frame)/2.0f, CGRectGetHeight(self.frame)/2.0);
             tempLayer.path = tempPath.CGPath;
@@ -107,6 +109,11 @@
 - (void)startAnimation
 {
     self.mainShapeLayer.speed = 1.0f;
+}
+
+- (void)stopAnimation
+{
+    self.mainShapeLayer.speed = 0.0;
 }
 
 /*
