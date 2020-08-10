@@ -23,6 +23,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     JWLoadingMusic *tempLoading = [JWLoadingMusic new];
+    tempLoading.loading_height = 1;
     tempLoading.backgroundColor = self.view.backgroundColor;
     tempLoading.center = CGPointMake(CGRectGetWidth(self.view.frame) / 2.0,
                                      CGRectGetHeight(self.view.frame) / 2.0);

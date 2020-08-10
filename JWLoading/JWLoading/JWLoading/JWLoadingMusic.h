@@ -13,4 +13,6 @@
  */
 @interface JWLoadingMusic : JWLoadingView
 
+@property (nonatomic, assign) NSInteger loading_height;
+
 @end

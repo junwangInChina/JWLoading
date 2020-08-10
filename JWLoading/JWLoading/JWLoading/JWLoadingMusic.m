@@ -28,6 +28,7 @@
     if (self)
     {
         self.frame = CGRectMake(0, 0, JWLOADING_SCREEN_WIDTH, kLayer_Height);
+        self.loading_height = kLayer_Height;
     }
     return self;
 }
@@ -40,9 +41,9 @@
     {
         tempWidth = JWLOADING_SCREEN_WIDTH;
     }
-    if (tempHeight <= kLayer_Height)
+    if (tempHeight <= self.loading_height)
     {
-        tempHeight = kLayer_Height;
+        tempHeight = self.loading_height;
     }
     [super setFrame:CGRectMake(frame.origin.x, frame.origin.y, tempWidth, tempHeight)];
 }
@@ -53,7 +54,7 @@
     if (!_mainShapeLayer)
     {
         self.mainShapeLayer = [CAShapeLayer layer];
-        _mainShapeLayer.frame = CGRectMake(0, 0, JWLOADING_SCREEN_WIDTH, kLayer_Height);
+        _mainShapeLayer.frame = CGRectMake(0, 0, JWLOADING_SCREEN_WIDTH, self.loading_height);
         _mainShapeLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
         _mainShapeLayer.position = CGPointMake(CGRectGetWidth(self.frame)/2.0, CGRectGetHeight(self.frame)/2.0);
         _mainShapeLayer.speed = 0.0f;
@@ -72,11 +73,11 @@
         
         for (NSInteger i = 0; i < tempColors.count; i++)
         {
-            CGFloat tempY = (arc4random() % kLayer_Height) + 30;
+            CGFloat tempY = (arc4random() % self.loading_height) + 30;
             CGFloat tempDuration = ((arc4random() % 100) + 50) / 100.0;
             
             CAShapeLayer *tempLayer = [CAShapeLayer layer];
-            tempLayer.frame = CGRectMake(tempX + i * (kLayer_Width + kLayer_Margin), -(kLayer_Height/2.0), kLayer_Width, kLayer_Height);
+            tempLayer.frame = CGRectMake(tempX + i * (kLayer_Width + kLayer_Margin), -(self.loading_height/2.0), kLayer_Width, self.loading_height);
             tempLayer.path = [self beziPath:tempY].CGPath;
             tempLayer.strokeColor = JWLoadingColor(tempColors[i]).CGColor;
             tempLayer.lineWidth = kLayer_Width;
@@ -96,8 +97,8 @@
 - (UIBezierPath *)beziPath:(CGFloat)y
 {
     UIBezierPath *tempPath = [UIBezierPath bezierPath];
-    [tempPath moveToPoint:CGPointMake(0, kLayer_Height)];
-    [tempPath addLineToPoint:CGPointMake(0, kLayer_Height-y)];
+    [tempPath moveToPoint:CGPointMake(0, self.loading_height)];
+    [tempPath addLineToPoint:CGPointMake(0, self.loading_height-y)];
     
     return tempPath;
 }
